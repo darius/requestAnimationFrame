@@ -17,3 +17,4 @@ MIT license.
 
 To do: incorporate improvements from
 http://stackoverflow.com/questions/13241314/up-to-date-polyfill-for-requestanimationframe
+and https://gist.github.com/mrdoob/838785
