@@ -9,9 +9,6 @@
 
 // MIT license
 
-if (!Date.now)
-    Date.now = function() { return new Date().getTime(); };
-
 (function() {
     var vendors = ['webkit', 'moz'];
     for (var i = 0; i < vendors.length && !window.requestAnimationFrame; ++i) {
@@ -24,7 +21,7 @@ if (!Date.now)
         || !window.requestAnimationFrame || !window.cancelAnimationFrame) {
         var lastTime = 0;
         window.requestAnimationFrame = function(callback) {
-            var now = Date.now();
+            var now = +new Date;
             var nextTime = Math.max(lastTime + 16, now);
             return setTimeout(function() { callback(lastTime = nextTime); },
                               nextTime - now);
