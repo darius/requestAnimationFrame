@@ -2,7 +2,11 @@ requestAnimationFrame
 =====================
 > requestAnimationFrame polyfill by [Erik Möller](https://twitter.com/erikjmoller).
 
-Polyfill for requestAnimationFrame and cancelAnimationFrame.
+Polyfill for
+[requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
+and cancelAnimationFrame. That is, load the included .js file to make those
+functions work (more or less) even on older systems that do not natively supply
+them.
 
 This version of the code is only lightly tested. It's provoked no
 complaints since the initial checkin of 2013-9-16, but it hasn't been
